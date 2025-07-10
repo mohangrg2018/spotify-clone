@@ -1,6 +1,7 @@
 import { albumsData, songsData } from "../assets/frontend-assets/assets";
 import AlbumItem from "./AlbumItem";
 import Navbar from "./Navbar";
+import SongItem from "./SongItem";
 
 const DisplayHome = () => {
   return (
@@ -24,7 +25,7 @@ const DisplayHome = () => {
         <h1 className="my-5 font-bold text-2xl">Today's Big Hits</h1>
         <div className="flex overflow-auto">
           {songsData.map((item, index) => (
-            <AlbumItem
+            <SongItem
               key={index}
               name={item.name}
               image={item.image}
