@@ -20,7 +20,7 @@ const DisplayAlbum = () => {
             {albumData.name}
           </h2>
           <h4>{albumData.desc}</h4>
-          <p className="mt-1 flex items-center gap-4">
+          <div className="mt-1 flex items-center gap-4">
             <img
               className="inline-block w-5"
               src={assets.spotify_logo}
@@ -33,7 +33,7 @@ const DisplayAlbum = () => {
                 <b>50 songs,</b>about 2 hr 30 min
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-4 mt-10 mb-4 pl-2 text-[#a7a7a7]">
